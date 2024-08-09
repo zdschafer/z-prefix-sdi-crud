@@ -19,9 +19,7 @@ export default function CreateAccount() {
             <Center>
                 <ButtonGroup>
                     <Button type="submit" onClick={() => createAccount().then(response => {
-                        if(response === 201) {
-                            //window.alert("Account Created!");
-
+                        if(response) {
                             toast({
                                 title: "Account Created!",
                                 status: 'success',
@@ -69,7 +67,7 @@ async function createAccount() {
             })
         })
         .then(response => {
-            return response.status;
+            return response.ok;
         })
     }
 }

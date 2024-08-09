@@ -20,6 +20,7 @@ export default function LoginPage({ setUsername }) {
 
     return (
         <Box width="50%" margin="0 auto">
+            <Heading textAlign="center">Inventory Management System</Heading>
             <Heading textAlign="center">Login</Heading>
             <Stack spacing="10px" marginY="1em">
                 <Input onChange={updateLogin} width='auto' variant='filled' type="text" name="username" id="username-login" placeholder="Username" required />

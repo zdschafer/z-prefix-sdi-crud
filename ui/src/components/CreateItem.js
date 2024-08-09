@@ -42,7 +42,6 @@ function submitCreate(username, navigate) {
             })
         })
         .then(response => {
-            console.log(response)
             if(response.ok) {
                 navigate(`/items/${username}`)
             }
